@@ -1,0 +1,16 @@
+{% extends 'billing_portal/base.html' %}
+{% block title %}Company Dashboard{% endblock %}
+
+{% block content %}
+<div class="row text-center mt-5">
+    <div class="col-12">
+        <h1 class="text-neon mb-4">Welcome, {{ company.company_name }}</h1>
+        <p class="lead text-light mb-5">Create and print beautiful invoices for your customers directly from your browser.</p>
+        
+        <div class="card p-5 d-inline-block" style="max-width: 400px; background: linear-gradient(145deg, #1e1e1e, #2a2a2a)">
+            <h4 class="mb-4">Billing Module</h4>
+            <a href="{% url 'billing' %}" class="btn btn-lg btn-primary w-100">Go to Billing Page</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
